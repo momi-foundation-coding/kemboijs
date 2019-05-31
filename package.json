@@ -1,4 +1,29 @@
 {
-    "name": "kemboijs",
-    "version": "1.0.0"
+  "name": "kemboijs",
+  "version": "1.0.0",
+  "description": "Kemboijs is a NodeJS API-based Framework",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-x-mi/kemboijs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "kemboijs",
+    "nodejs",
+    "framework",
+    "javascript"
+  ],
+  "author": "Ezrqn Kemboi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/me-x-mi/kemboijs/issues"
+  },
+  "homepage": "https://github.com/me-x-mi/kemboijs#readme"
 }
