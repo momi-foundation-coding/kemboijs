@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/me-x-mi/kemboijs.svg?style=svg)](https://circleci.com/gh/me-x-mi/kemboijs)
+[![Coverage Status](https://coveralls.io/repos/github/me-x-mi/kemboijs/badge.svg?branch=master)](https://coveralls.io/github/me-x-mi/kemboijs?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE)
 
 ## KemboiJS
 
