@@ -10,7 +10,7 @@ A NodeJS API-based framework. The framework is at its initial state and developm
 
 # Philosophy
 
-The current revolves of web is based on API and microservices. Templating usage has reduced for the past few years.
+The current web development development is based on API and microservices. Templating usage has reduced for the past few years.
 The usage of c++ addons in nodejs community is increasing and its experimental process is one of major success.
 With such growth, there is a higher possibility of creating server with an optimized code as C++ allow for Single Instruction, Multiple Data (SIMD). It optimization performance during compilation. Leveraging API and C++ for better server development, kemboijs is striving towards making it better and easier to work with.
 
@@ -65,7 +65,7 @@ Please read our [contribution guide](https://github.com/me-x-mi/kemboijs/blob/ma
 
 # Licence
 
-[MIT](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE) © 2019 Ezrqn Kemboi
+[MIT](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE) © 2019 [Ezrqn Kemboi](https://www.ezrqnkemboi.dev/)
 
 # Disclaimer
 
