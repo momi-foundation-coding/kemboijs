@@ -7,6 +7,14 @@
 
 A NodeJS API-based framework. The framework is at its initial state and development is currently being worked on. Therefore, expect to see incomplete work.
 
+
+# Philosophy
+
+The current revolves of web is based on API and microservices. Templating usage has reduced for the past few years.
+The usage of c++ addons in nodejs community is increasing and its experimental process is one of major success.
+With such growth, there is a higher possibility of creating server with an optimized code as C++ allow for Single Instruction, Multiple Data (SIMD). It optimization performance during compilation. Leveraging API and C++ for better server development, kemboijs is striving towards making it better and easier to work with.
+
+
 # Installation
 
 This is a [NodeJS](https://nodejs.org/en/) module available through [npm registry](https://www.npmjs.com/package/kemboijs).
@@ -18,7 +26,7 @@ $ npm install kemboijs
 
 # Tests
 
-```bash 
+```bash
 $ npm test
 ```
 
@@ -27,11 +35,11 @@ $ npm test
 ```javascript
     const kemboijs = require('kemboijs')
     const app = kemboijs()
-    
+
     app.listen(8000)
 ```
 
-# Support 
+# Support
 
 - [Documentation](https://github.com/me-x-mi/kemboijs)
 - [Community Support](https://github.com/me-x-mi/kemboijs)
@@ -41,7 +49,7 @@ $ npm test
 
 # Issue Submission
 
-Read [submission guideline](https://github.com/me-x-mi/kemboijs/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) and [code of conduct](https://github.com/me-x-mi/kemboijs/blob/master/CODE_OF_CONDUCT.md) before opening an issue. 
+Read [submission guideline](https://github.com/me-x-mi/kemboijs/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) and [code of conduct](https://github.com/me-x-mi/kemboijs/blob/master/CODE_OF_CONDUCT.md) before opening an issue.
 
 # Contribute
 
@@ -55,7 +63,7 @@ There are several ways for contributing
 
 Please read our [contribution guide](https://github.com/me-x-mi/kemboijs/blob/master/CONTRIBUTING.md) and check that build pass before and your branch is updated to `upstream` submitting any pull request.  
 
-# Licence 
+# Licence
 
 [MIT](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE) © 2019 Ezrqn Kemboi
 
