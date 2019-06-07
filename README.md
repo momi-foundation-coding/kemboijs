@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/me-x-mi/kemboijs.svg?style=svg)](https://circleci.com/gh/me-x-mi/kemboijs)
-[![Coverage Status](https://coveralls.io/repos/github/me-x-mi/kemboijs/badge.svg?branch=master)](https://coveralls.io/github/me-x-mi/kemboijs?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/90fb6c58612e3fa9b208/maintainability)](https://codeclimate.com/github/me-x-mi/kemboijs/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/90fb6c58612e3fa9b208/test_coverage)](https://codeclimate.com/github/me-x-mi/kemboijs/test_coverage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/kemboijs.svg)](https://badge.fury.io/js/kemboijs)
 
