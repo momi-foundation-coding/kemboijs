@@ -1,6 +1,6 @@
 {
   "name": "kemboijs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Kemboijs is a NodeJS API-based Framework",
   "main": "index.js",
   "directories": {

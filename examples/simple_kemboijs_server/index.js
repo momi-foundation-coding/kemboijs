@@ -7,5 +7,5 @@ const port = 8000;
 const app = kemboijs();
 
 app.listen(port, () => {
-    console.log(`The server is listenng to http://${hostname}/${port}`)
+    console.log(`The server is listenng to http://${hostname}:${port}`)
 });
