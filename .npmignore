@@ -1,0 +1,5 @@
+# Ignore examples directory when publishing to npm
+examples
+
+# Exclude tests directory also
+test
