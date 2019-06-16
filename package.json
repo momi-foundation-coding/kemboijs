@@ -38,5 +38,11 @@
   "devDependencies": {
     "mocha": "^6.1.4",
     "nyc": "^14.1.1"
-  }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ]
 }
