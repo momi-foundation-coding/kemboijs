@@ -3,6 +3,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/90fb6c58612e3fa9b208/test_coverage)](https://codeclimate.com/github/me-x-mi/kemboijs/test_coverage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/kemboijs.svg)](https://badge.fury.io/js/kemboijs)
+![npm](https://img.shields.io/npm/dt/kemboijs.svg)
 
 # KemboiJS
 
