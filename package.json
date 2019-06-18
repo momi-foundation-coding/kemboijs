@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "nyc --reporter=text mocha --exit"
+    "test": "nyc --reporter=lcov --reporter=text mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/me-x-mi/kemboijs#readme",
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1"
   },

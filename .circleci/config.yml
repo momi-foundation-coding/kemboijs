@@ -5,8 +5,6 @@
 version: 2
 jobs:
   build:
-    environment:
-        CC_TEST_REPORTER_ID: process.env.CODECLIMATE_REPO_TOKEN
     docker:
       # specify the version you desire here
       - image: circleci/node:10
@@ -45,15 +43,8 @@ jobs:
       - run: 
           name: Run Test and Coverage
           command: | 
+            mkdir /tmp/test-results
             ./cc-test-reporter before-build
-            npm test -- --coverage
+            npm test --u --coverage
             # Upload test report to code climate after-build
-            # ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
-
-      # Get coverage
-      - store_artifacts:
-          path: coverage/.resulttest.json
-          prefix: coverage
-          # Notify codeclimate of a pending test report before-build
-          
-          
+            ./cc-test-reporter after-build --exit-code $? || true
