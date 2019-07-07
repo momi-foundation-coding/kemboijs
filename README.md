@@ -13,6 +13,8 @@ A NodeJS API-based framework. The framework is at its initial state and developm
 # Philosophy
 
 The current web development development is based on API and microservices. Templating usage has reduced for the past few years.
+In todays enterprise software, micro-services design patterns has been adopted. REST APIs tend to provide simple, stateless, and highly decoupled business worksflows. 
+Also, more sophisticated architectures rely on API gateway that is fast. The following can be handled by REST API, SSL termination, logging, content/file compressions, authentication and authorization, caching,and even load blancing. 
 The usage of c++ addons in nodejs community is increasing and its experimental process is one of major success.
 With such growth, there is a higher possibility of creating server with an optimized code as C++ allow for Single Instruction, Multiple Data (SIMD). It optimization performance during compilation. Leveraging API and C++ for better server development, kemboijs is striving towards making it better and easier to work with.
 
