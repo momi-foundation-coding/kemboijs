@@ -36,9 +36,8 @@
   },
   "homepage": "https://github.com/me-x-mi/kemboijs#readme",
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.1"
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0"
   },
   "files": [
     "LICENSE",
