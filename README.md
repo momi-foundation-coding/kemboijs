@@ -1,7 +1,7 @@
 [![CircleCI](https://circleci.com/gh/kemboijs/kemboijs.svg?style=svg)](https://circleci.com/gh/kemboijs/kemboijs)
 [![Maintainability](https://api.codeclimate.com/v1/badges/907ee7a5580bf5e511fe/maintainability)](https://codeclimate.com/github/kemboijs/kemboijs/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/907ee7a5580bf5e511fe/test_coverage)](https://codeclimate.com/github/kemboijs/kemboijs/test_coverage)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/me-x-mi/kemboijs/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kemboijs/kemboijs/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/kemboijs.svg)](https://badge.fury.io/js/kemboijs)
 ![npm](https://img.shields.io/npm/dt/kemboijs.svg)
 
@@ -37,10 +37,23 @@ $ npm test
 # Example and Usage
 
 ```javascript
-    const kemboijs = require('kemboijs')
-    const app = kemboijs()
+    const server = require('kemboijs');
 
-    app.listen(8000)
+    // GET method
+    server.get('/');
+
+    // POST method
+    server.post('/');
+
+    // PUT method
+    server.put('/');
+
+    // DELETE method
+    server.del('/');
+
+    server.listen(8000, () => {
+        `app is listening to port 8000`
+    });
 ```
 
 # Support
