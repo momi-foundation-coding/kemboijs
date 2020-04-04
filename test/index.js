@@ -1,26 +1,34 @@
-const kemboijs = require('../index')
-const assert = require('assert')
+const server = require('../index');
 
 describe("Start server", function () {
-    let server;
     const port = 8080;
     // Start server
     before(done => {
-        server = kemboijs();
         done();
         // Listen to port 3000 for tests
         server.listen(port)
     });
-    // Test if server starts
-    it('start kemboijs server', function () {
-        // Get the port running the server
-        const serverEntries = Object.values(server);
-        let portRunning;
-        serverEntries.filter(value => {
-            portRunning = value;
-        });
-        assert.equal(portRunning, '6::::8080')
+
+    // GET request
+    it('should do GET request', () => {
+        server.get('/');
     });
+
+    // POST request
+    it('should do POST request', () => {
+        server.post('/');
+    });
+
+    // PUT request
+    it('should do PUT request', () => {
+        server.put('/');
+    });
+
+    // POST request
+    it('should do DELETE request', () => {
+        server.del('/');
+    });
+
     // Close the server
     after(done => {
         done();
