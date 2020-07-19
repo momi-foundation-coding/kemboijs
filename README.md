@@ -35,25 +35,48 @@ $ npm test
 ```
 
 # Example and Usage
+```javascript 
+const Server = require('kemboijs');
 
-```javascript
-    const server = require('kemboijs');
+const port = 8001;
+const app = new Server()
 
-    // GET method
-    server.get('/');
+/**
+ * CRUD implementation
+ * POST, GET, PUT, DELETE
+ */
+app.get('/', (req, res) => {
+    // send takes result, status(optional)
+    res.send({
+        result: "Hello World!",
+        method: 'GET'
+    }, 200)
+})
 
-    // POST method
-    server.post('/');
+app.post('/', (req, res) => {
+    res.send({
+        result: "Hello World!",
+        method: 'POST'
+    }, 201)
+})
 
-    // PUT method
-    server.put('/');
+app.put('/', (req, res) => {
+    res.send({
+        result: "Hello World - Edited!",
+        method: 'PUT'
+    }, 200)
+})
 
-    // DELETE method
-    server.del('/');
+app.del('/', (req, res) => {
+    res.send({
+        result: "Deleted successfully",
+        method: 'DELETE'
+    }, 200)
+})
 
-    server.listen(8000, () => {
-        `app is listening to port 8000`
-    });
+app.listen(port, () => {
+    console.log(`The server is listenng to http://127.0.0.1:${port}`)
+});
 ```
 
 # Support
