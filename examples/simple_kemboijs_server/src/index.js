@@ -11,33 +11,38 @@ const app = new Server()
  */
 app.get('/', (req, res) => {
     // send takes result, status(optional)
-    res.send({
+    return res.send({
         result: "Hello World!",
         method: 'GET'
     }, 200)
 })
 
 app.post('/', (req, res) => {
-    res.send({
-        result: "Hello World!",
+    const { username } = req.body;
+    if(!username) {
+        return res.send({ message: "Please provide username "}, 400)
+    }
+    
+    return res.send({
+        result: `Hello ${username}`,
         method: 'POST'
     }, 201)
 })
 
 app.put('/', (req, res) => {
-    res.send({
+    return res.send({
         result: "Hello World - Edited!",
         method: 'PUT'
     }, 200)
 })
 
 app.del('/', (req, res) => {
-    res.send({
+    return res.send({
         result: "Deleted successfully",
         method: 'DELETE'
     }, 200)
 })
 
 app.listen(port, () => {
-    console.log(`The server is listenng to http://${hostname}:${port}`)
+    console.log(`The server is listening to http://${hostname}:${port}`)
 });
