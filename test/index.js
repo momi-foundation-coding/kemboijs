@@ -1,32 +1,51 @@
-const server = require('../index');
+const Server = require('../index');
 
-describe("Start server", function () {
+const app = new Server();
+
+describe("Start Server Application", () => {
     const port = 8080;
-    // Start server
-    before(done => {
+    // Start app
+    beforeEach(done => {
         done();
         // Listen to port 3000 for tests
-        server.listen(port)
+        app.listen(port)
     });
 
     // GET request
     it('should do GET request', () => {
-        server.get('/');
+        app.get('/', (req, res) => {
+            console.log({ res })
+            res.send({
+                message: "GET request"
+            }, 200)
+        });
     });
 
     // POST request
     it('should do POST request', () => {
-        server.post('/');
-    });
+        app.post('/', (req, res) => {
+            res.send({
+                message: "POST request"
+            }, 201)
+        })
+    })
 
     // PUT request
     it('should do PUT request', () => {
-        server.put('/');
+        app.put('/', (req, res) => {
+            res.send({
+                message: "PUT request"
+            }, 200)
+        });
     });
 
     // POST request
     it('should do DELETE request', () => {
-        server.del('/');
+        app.del('/', (req, res) => {
+            res.send({
+                message: "DELETE request"
+            }, 200)
+        });
     });
 
     // Close the server
