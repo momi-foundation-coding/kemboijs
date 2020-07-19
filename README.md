@@ -54,8 +54,13 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    res.send({
-        result: "Hello World!",
+    const { username } = req.body;
+    if(!username) {
+        return res.send({ message: "Please provide username "}, 400)
+    }
+    
+    return res.send({
+        result: `Hello ${username}`,
         method: 'POST'
     }, 201)
 })
