@@ -1,20 +1,22 @@
-const server = require('kemboijs');
+const Server = require('kemboijs');
 
 const hostname = '127.0.0.1';
-const port = 8000;
+const port = 8001;
+
+const app = new Server()
 
 /**
  * CRUD implementation
  * POST, GET, PUT, DELETE
  */
-server.get('/');
+app.get('/');
 
-server.post('/');
+app.post('/');
 
-server.put('/');
+app.put('/');
 
-server.del('/');
+app.del('/');
 
-server.listen(port, () => {
+app.listen(port, () => {
     console.log(`The server is listenng to http://${hostname}:${port}`)
 });
