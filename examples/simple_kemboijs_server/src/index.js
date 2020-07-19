@@ -9,7 +9,12 @@ const app = new Server()
  * CRUD implementation
  * POST, GET, PUT, DELETE
  */
-app.get('/');
+app.get('/', async (req, res) => {
+    // send takes result, status(optional)
+    res.send({
+        result: "Hello World"
+    }, 200)
+});
 
 app.post('/');
 
