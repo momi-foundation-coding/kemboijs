@@ -15,18 +15,28 @@ app.get('/', (req, res) => {
         result: "Hello World!",
         method: 'GET'
     }, 200)
-});
+})
 
 app.post('/', (req, res) => {
     res.send({
         result: "Hello World!",
         method: 'POST'
+    }, 201)
+})
+
+app.put('/', (req, res) => {
+    res.send({
+        result: "Hello World - Edited!",
+        method: 'PUT'
     }, 200)
-});
+})
 
-app.put('/');
-
-app.del('/');
+app.del('/', (req, res) => {
+    res.send({
+        result: "Deleted successfully",
+        method: 'DELETE'
+    }, 200)
+})
 
 app.listen(port, () => {
     console.log(`The server is listenng to http://${hostname}:${port}`)
