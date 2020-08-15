@@ -1,0 +1,24 @@
+{
+  "name": "simple_kemboijs_server",
+  "version": "1.0.0",
+  "description": "This is a simple web server to test kemboijs framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "kemboijs",
+    "nodejs",
+    "server",
+    "api"
+  ],
+  "author": "[Ezrqn kemboi]",
+  "license": "MIT",
+  "dependencies": {
+    "kemboijs": "file:../.."
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
